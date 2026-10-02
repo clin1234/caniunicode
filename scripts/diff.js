@@ -57,7 +57,7 @@ const newRgiEmoji = ({ newVersion, oldVersion }) => {
 	}
 
 	const NEW_RGI_EMOJI = new Set(
-		require(`unicode-emoji-${newVersion}/Sequence_Property/RGI_Emoji/index.js`),
+		require(`unicode-emoji-${newVersion}/Sequence_Property/RGI_Emoji/index.mjs`).default,
 	);
 
 	const OLD_RGI_EMOJI = new Set(
